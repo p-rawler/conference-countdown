@@ -134,13 +134,18 @@
     return `
       <main id="event-main" class="event-page">
         ${renderHero(event)}
-        ${renderDetailsSection(event)}
-        ${renderAboutSection(event)}
-        ${renderPeopleSection(event)}
-        ${renderScheduleSection(event)}
-        ${renderLocationSection(event)}
-        ${renderFaqSection(event)}
-        ${renderFooter(event)}
+        ${/*
+          Commented out per page annotation: everything below the hero is kept
+          available for reuse, but should not appear on the frontend right now.
+
+          renderDetailsSection(event)
+          renderAboutSection(event)
+          renderPeopleSection(event)
+          renderScheduleSection(event)
+          renderLocationSection(event)
+          renderFaqSection(event)
+          renderFooter(event)
+        */ ""}
       </main>
     `;
   }
