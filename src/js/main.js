@@ -200,7 +200,7 @@
             hasImage
               ? `<figure class="hero__art">
                   <img src="${attr(event.heroImage.src)}" alt="${attr(event.heroImage.alt || event.eventName)}">
-                  <figcaption>Official event artwork</figcaption>
+                  <figcaption></figcaption>
                 </figure>`
               : ""
           }
@@ -553,7 +553,7 @@
       };
     }
 
-    if (end && now > end) {
+    if (end && now >= end) {
       return {
         phase: "finished",
         status: event.finishedLabel || "EVENT COMPLETED",

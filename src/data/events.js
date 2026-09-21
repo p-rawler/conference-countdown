@@ -19,14 +19,19 @@
       },
 
       /*
-       * The flyer does not show a year. Keep startDateTime and endDateTime null
-       * until the client confirms the exact year. Use ISO 8601 with timezone:
-       * 2026-09-04T08:00:00+03:00
+       * Countdown target. Use ISO 8601 with timezone so the page remains
+       * accurate across browsers and visitor locations.
        */
       date: {
-        display: "Sunday, September 4th - Sunday, September 11th",
-        startDateTime: null,
-        endDateTime: null
+        display: "Sunday, October 4th - Sunday, October 11th, 2026",
+        startDateTime: "2026-10-04T08:00:00+03:00",
+        endDateTime: "2026-10-11T18:00:00+03:00"
+      },
+      countdown: {
+        start: "2026-10-04T08:00:00+03:00",
+        end: "2026-10-11T18:00:00+03:00",
+        liveLabel: "LIVE NOW",
+        finishedLabel: "EVENT COMPLETED"
       },
       startTime: "8:00 AM",
       endTime: "6:00 PM",
